@@ -3,7 +3,7 @@ package Sequence;
 /**
  * Created by Tars on 2016/4/8.
  */
-
+//插入排序
 public class InsertionSort {
     public int[] insertionSort(int[] A, int n) {
         if(A == null||A.length<2){
