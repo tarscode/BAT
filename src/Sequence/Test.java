@@ -6,8 +6,12 @@ package Sequence;
 public class Test {
     public static void main(String args[]){
         int[] A = {1,2,3,5,2,3};
+        int[] B;
         int n = 6;
         MergeSort m = new MergeSort();
-        System.out.println(m.mergeSort(A,n));
+        B = m.mergeSort(A,n);
+        for(int i = 0;i<6;i++){
+            System.out.println(B[i]);
+        }
     }
 }

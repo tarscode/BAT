@@ -4,23 +4,20 @@ package Sequence;
  * Created by Tars on 2016/4/8.
  */
 public class MergeSort {
-    private int[] B;
+    private static int[] aux;
     public int[] mergeSort(int[] A, int n) {
-        for(int i=0;i<n;i++){
-            B[i]=A[i];
-        }
+        aux = new int[n];
         for(int sz=1;sz<n;sz = sz+sz){
             for (int begin = 0;begin<n-sz;begin=begin+sz+sz){
-                merge(B,begin,begin+sz-1,Math.min(begin+sz+sz-1,n-1));
+                merge(A,begin,begin+sz-1,Math.min(begin+sz+sz-1,n-1));
             }
         }
-        return B;
+        return A;
     }
 
-    public static int[] merge(int[] a, int begin, int mid, int end){
+    public static void merge(int[] a, int begin, int mid, int end){
         int i = begin,j = mid+1;
-        int[] aux = new int[a.length];
-        for(int k=begin;k<=end;i++){
+        for(int k=begin;k<=end;k++){
             aux[k] = a[k];
         }
         for(int k=begin;k<=end;k++){
@@ -36,6 +33,6 @@ public class MergeSort {
             else
                 a[k]=aux[i++];
         }
-        return a;
     }
+
 }
