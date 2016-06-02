@@ -22,7 +22,7 @@ public class MergeSort {
         }
         for(int k=begin;k<=end;k++){
             if(i>mid){
-                a[k]=aux[j++];
+                a[k]=aux[j++];//先获取j的值再执行j+1
             }
             else if(j>end){
                 a[k]=aux[i++];
