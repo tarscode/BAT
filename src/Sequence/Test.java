@@ -10,8 +10,8 @@ public class Test {
         int[] A = {1,2,3,5,2,3};
         int[] B;
         int n = 6;
-        HeapSort h = new HeapSort();
-        B = h.heapSort(A,n);
+        ShellSort s = new ShellSort();
+        B = s.shellSort(A,n);
         Util.printArray(B);
     }
 }
