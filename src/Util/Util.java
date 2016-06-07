@@ -9,6 +9,7 @@ public class Util {
         System.out.print("数组输出:");
         for(int i=0;i<n;i++){
             System.out.print(A[i]);
+            //System.out.println("\n");
         }
         System.out.println("\n");
     }
