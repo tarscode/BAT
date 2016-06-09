@@ -7,10 +7,10 @@ import Util.Util;
  */
 public class Test {
     public static void main(String args[]){
-        int[][] A = {{281,394,667,785},{944,1019,1248,1366},{1459,1521,1746,1975}};
+        int[] A = {1,2,6,5,8,9};
         int[] B;
         int n = 6;
-        Finder f = new Finder();
-        System.out.println(f.findX(A,3,4,394));
+        Subsequence s = new Subsequence();
+        System.out.println(s.shortestSubsequence(A,n));
     }
 }
