@@ -3,7 +3,7 @@ package Sequence;
 /**
  * Created by liuyang on 16/6/7.
  * 有序数组合并
- * 与牛客网结果运行不一致,返回数组为A
+ * 返回数组为A
  */
 public class Merge {
     public int[] mergeAB(int[] A, int[] B, int n, int m) {
