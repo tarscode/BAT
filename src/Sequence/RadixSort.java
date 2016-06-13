@@ -21,11 +21,6 @@ public class RadixSort {
                         list.remove(i);
                         len--;
                         i--;
-                        //System.out.println("m:"+m+" "+"j:"+j+" "+"i:"+list.get(i)+" "+"num:"+num((list.get(i)).intValue(), m));
-                        for (int k=0;k<n;k++){
-                            System.out.print(list.get(k));
-                        }
-                        System.out.println();
                     }
                 }
             }
