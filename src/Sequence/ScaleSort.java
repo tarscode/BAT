@@ -3,7 +3,10 @@ package Sequence;
 /**
  * Created by liuyang on 16/6/9.
  * 小范围排序
+ * 采用堆排序的方法
+ * 版本2.0
  */
+/*
 public class ScaleSort {
     public int[] sortElement(int[] A, int n, int k) {
         int min = 0;
@@ -30,5 +33,11 @@ public class ScaleSort {
         int temp = A[i];
         A[i] = A[j];
         A[j] = temp;
+    }
+}
+*/
+public class ScaleSort {
+    public int[] sortElement(int[] A, int n, int k) {
+        return A;
     }
 }
