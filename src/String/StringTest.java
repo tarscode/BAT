@@ -7,9 +7,9 @@ import Util.Util;
  */
 public class StringTest {
     public static void main(String args[]){
-        String A = "jd hate tmall";
-        int n = 13;
-        Reverse r = new Reverse();
-        System.out.println(r.reverseSentence(A,n));
+        String A = "()(()()";
+        int n = 7;
+        Parenthesis p = new Parenthesis();
+        System.out.println(p.chkParenthesis(A,n));
     }
 }

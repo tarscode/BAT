@@ -3,6 +3,8 @@ package String;
 /**
  * Created by liuyang on 16/6/14.
  * 字符串移位
+ * 时间:31ms
+ * 内存:709K
  */
 public class Translation {
     public String stringTranslation(String A, int n, int len) {
