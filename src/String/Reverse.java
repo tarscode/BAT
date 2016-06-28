@@ -37,37 +37,4 @@ public class Reverse {
         return arr;
     }
 }
-/*
-public class Reverse {
-    public String reverseSentence(String A, int n) {
-        char[] B = A.toCharArray();
-        char[] C = new char[n];
-        for (int i = 0, j = 0; i < n; i++) {
-            //处理第一个单词
-            if(B[i]==' '&&j==0){
-                for (int k = j, l = 0; k < i; k++) {
-                    C[n - i + l++] = B[k];
-                }
-                j = i;
-                C[n-i-1]=' ';
-            }
-            //处理中间部分单词
-            if (B[i] == ' '&&j!=0) {
-                for (int k = j, l = 0; k < i; k++) {
-                    C[n - i + l++-1] = B[k];
-                }
-                j = i;
-            }
-            //处理最后一个单词
-            if (i == n - 1) {
-                for (int k = ++j, l = 0; k <= i; k++) {
-                    C[n - i - 1 + l++] = B[k];
-                }
-            }
-        }
-        A = String.valueOf(C);
-        return A;
-    }
-}
-*/
 
