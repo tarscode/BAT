@@ -19,14 +19,13 @@ public class IdenticalTree {
             return true;
         }
     }
-    //#!和!定位
+    //#!和!定位,例如1!2#!#!3#!3#!和1!#!#!
     public StringBuffer posOrderRecur(TreeNode head){
         StringBuffer buffer = new StringBuffer("#!");
         if(head == null){
             return buffer;
         }
-        StringBuffer buf = new StringBuffer("!");
-        buf = buf.append(head.val);
+        StringBuffer buf = new StringBuffer(head.val+"!");
         buf = buf.append(posOrderRecur(head.left));
         buf = buf.append(posOrderRecur(head.right));
         return buf;
