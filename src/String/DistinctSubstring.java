@@ -3,6 +3,9 @@ package String;
 /**
  * Created by liuyang on 16/7/5.
  * 最长无重复字符子串
+ * 版本:1.0
+ * 时间:36ms
+ * 内存:709K
  */
 public class DistinctSubstring {
     public int longestSubstring(String A, int n) {

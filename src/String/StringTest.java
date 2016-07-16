@@ -7,8 +7,8 @@ import Util.Util;
  */
 public class StringTest {
     public static void main(String args[]) {
-        String A1 = "aabcbfa";
-        int n1 = 6;//3
+        String A1 = "aabcb";
+        int n1 = 5;//3
         String A2 = "rfrxkmdb";
         int n2 = 8;//7
         String A3 = "kojypxtmcheuvhpkqapldlkxkdbbouclkqwpnivxquwimbexyuqlipqpnlaklsqjnhcqspegqswpwinmvaokwbzylyrctfiscjuweakmmiaqsuanrfxhaffeuaauafqkeksjxgdpspkzzzsawuyvrdbgdqhrnkspldkkqfmlsofadojwfdikwpzsafacxoktpxkzmzzihljiqlsnbygkstydeflbgjrzrtxryfcntduaadqyzxmsrrxqbgldcvmtmqwyqgjtda";
