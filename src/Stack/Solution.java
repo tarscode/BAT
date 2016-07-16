@@ -7,18 +7,15 @@ import java.util.Stack;
  * 可查询最值的栈
  */
 public class Solution {
-    Stack<Integer> stack = new Stack();
-    Stack<Integer> minStack = new Stack<>();
+    private Stack<Integer> stack = new Stack<Integer>();
+    private Stack<Integer> minStack = new Stack<Integer>();
 
     public void push(int node) {
         stack.push(Integer.valueOf(node));
-        if(minStack.empty()){
+        if (minStack.empty()||stack.peek() < minStack.peek()) {
             minStack.push(Integer.valueOf(node));
-        }
-        if (stack.peek() > minStack.peek()) {
-            minStack.push(minStack.peek());
         } else {
-            minStack.push(Integer.valueOf(node));
+            minStack.push(minStack.peek());
         }
     }
 
