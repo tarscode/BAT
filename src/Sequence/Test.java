@@ -7,11 +7,10 @@ import Util.Util;
  */
 public class Test {
     public static void main(String args[]){
-        int[] A = {1,2,3,5,2,3};
-        int[] B = {1,3,4,11};
-        int n = 6;
-        RadixSort r = new RadixSort();
-        B = r.radixSort(A,n);
-        Util.printArray(B);
+        int[] A = {2,1,4,3,6,5,8,7,10,9};
+        int n = 10;
+        int k = 2;
+        ScaleSort s = new ScaleSort();
+        Util.printArray(s.sortElement(A,n,k));
     }
 }
