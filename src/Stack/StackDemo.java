@@ -5,9 +5,9 @@ package Stack;
  */
 public class StackDemo {
     public static void main(String[] args){
-        TwoStacks t = new TwoStacks();
-        int[] arr = {1,2,3,4,5};
-        t.twoStacksSort(arr);
-        System.out.println(t.twoStacksSort(arr).toString());
+       int[] A = {2,4,3,1,3};
+        int n = 5;
+        TwoStacks t =new TwoStacks();
+        System.out.println(t.twoStacksSort(A));
     }
 }
