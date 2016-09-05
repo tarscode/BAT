@@ -58,7 +58,7 @@ public class TreeToSequence {
         return arr;
     }
 }
-
+/*
 class TreeNode {
     int val = 0;
     TreeNode left = null;
@@ -68,3 +68,4 @@ class TreeNode {
         this.val = val;
     }
 }
+*/
