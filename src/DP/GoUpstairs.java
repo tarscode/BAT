@@ -6,14 +6,15 @@ package DP;
  */
 public class GoUpstairs {
     public int countWays(int n) {
-        Long arr[] = new Long[100000];
-        arr[1] = 1L;
-        arr[2] = 2L;
-        for (int i = 3; i <= n; i++) {
-            arr[i] = arr[i - 1]%1000000007 + arr[i - 2]%1000000007;
+        int arr[] = new int[100000];
+        arr[0] = 1;
+        int mod = 1000000007;
+        for (int i = 1; i <= n; i++) {
+            arr[i] = ((i >= 1 ? arr[i - 1] : 0) + (i >= 2 ? arr[i - 2] : 0)) % mod;
         }
-        return n == 1 ? 1 : n == 2 ? 2 : arr[n].intValue()%1000000007;
+        return arr[n];
     }
+
     public static void main(String[] args) {
         GoUpstairs g = new GoUpstairs();
         System.out.println(g.countWays(36196));
